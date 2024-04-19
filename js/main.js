@@ -162,7 +162,8 @@ function toggleStatusWith(taskId)
 
 function dltAll()
 {
-        tasksDiv.innerHTML="";
         window.localStorage.removeItem("tasks");
+        tasksDiv.innerHTML="";
         deleteAll.innerHTML="";
+        location.reload(true);
 }
